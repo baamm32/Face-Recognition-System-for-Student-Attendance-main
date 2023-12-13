@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Recognition System</title>
+  <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  
+</head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="javascript:location.reload();" class="logo">
+            <img
+                src="{{ url_for('static', filename='Files/Resources/frlogo.png') }}"
+              />
+            <span class="nav-item">Face Recognition Attendance System</span>
+
+          <li><a href="student_login">
+            <i class="fas fa-user-alt"></i>
+            <span class="nav-item">Student Login</span>
+          </a></li>
+        </a></li>
+          <li><a href="admin_login">
+            <i class="fas fa-user-cog"></i>
+            <span class="nav-item">Admin Login</span>
+          </a></li>
+          <li><a href="student_attendance_list">
+            <i class="fas fa-calendar-check"></i>
+            <span class="nav-item">Student Attendance List</span>
+          </a></li>
+        </ul>
+      </nav>
+
+        <section class="main">
+          <div class="main-top">
+            <img src="{{url_for('video')}}" alt="Face Recognition Video" />
+          </div>
+        </section>
+      </div>
+</body>
+</html>
+
